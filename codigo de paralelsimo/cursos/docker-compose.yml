@@ -1,0 +1,13 @@
+version: '3.3'
+services: 
+  web:
+    build:
+      context: ./php
+      dockerfile: Dockerfile
+    container_name: phpservice2
+    volumes:
+      - ./php:/var/www/html/
+    ports:
+      - 8001:80
+    
+
